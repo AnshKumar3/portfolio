@@ -35,7 +35,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
     const revealRef = useRef<HTMLDivElement>(null);
 
 
-
+    if (typeof window !== 'undefined') {
     useEffect(() => {
         if (revealRef.current) {
           ScrollReveal().reveal(revealRef.current, {
@@ -46,7 +46,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
         }
       }, []);
     
-    
+    }
   return (
     <div>
       
