@@ -20,6 +20,25 @@ body {
     width: 100%; /* Full width for very small screens */
   }
 }
+/* Example styles for typography */
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+}
 
 
 .input-wrapper {

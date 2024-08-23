@@ -22,6 +22,84 @@ body {
     }
   }
   
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.menuIcon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar,
+.barOpen {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+}
+
+.navMenuOpen {
+  display: block;
+}
+
+.navItem {
+  margin-left: 2rem;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: flex;
+  }
+
+  .navMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navMenuOpen {
+    display: flex;
+  }
+
+  .navItem {
+    margin: 1rem 0;
+  }
+}
 
 
 
