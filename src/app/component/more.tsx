@@ -11,7 +11,7 @@ function More() {
 <span className="placeholder"></span>
 </div>
 <div className="typewriter">
-<h1>Creative Fullstack Web Developer</h1>
+<h1>Creative Fullstack <br></br>Web Developer</h1>
 </div>
 <div className="gagan">
 <h1>G a g a n</h1>
