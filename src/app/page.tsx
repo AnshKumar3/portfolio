@@ -14,6 +14,7 @@ import type { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 import Link from "next/link";
 import About from "./component/about";
+import Navbar from "./component/nav";
 
 export default function Home() {
 
@@ -25,22 +26,7 @@ export default function Home() {
         <App />
 
 
-        <nav className={styles.navbar} >
-          <div className={styles.logo}>
-            <Link href="/">MyApp</Link>
-          </div>
-          <ul className={styles.navLinks}>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
         <div className="input-wrapper">
           <input aria-label="Ask us anything"></input>
           <span className="placeholder"></span>
