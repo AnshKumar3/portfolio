@@ -1,0 +1,20 @@
+.ansh{
+    background-color: aliceblue;
+    color: black;
+}
+.responsive-div {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-div {
+      width: 90%; /* Adjust the width as needed for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .responsive-div {
+      width: 100%; /* Full width for very small screens */
+    }
+  }
+  

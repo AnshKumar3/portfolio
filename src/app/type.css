@@ -1,0 +1,982 @@
+@charset "UTF-8";
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  width: 100%;
+}
+.responsive-div {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .responsive-div {
+    width: 90%; /* Adjust the width as needed for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-div {
+    width: 100%; /* Full width for very small screens */
+  }
+}
+
+
+.input-wrapper {
+  display: block;
+  font-family: monospace;
+  font-size: 125%;
+  width: 50%;
+}
+.input-wrapper > input,
+.input-wrapper > .placeholder {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  font-size: xx-large;
+  color: aliceblue;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.input-wrapper > .placeholder {
+  pointer-events: none;
+}
+.input-wrapper > .placeholder::before {
+  content: "​";
+  content: "​"/"Do you need Creative Fullstack web developer?";
+  alt: "Do you need Creative Fullstack web developer?";
+  white-space: break-spaces;
+  will-change: content;
+  -webkit-animation: typed-0 7.4s linear 1s infinite forwards;
+          animation: typed-0 7.4s linear 1s infinite forwards;
+}
+.input-wrapper > .placeholder::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 2px;
+  border-right: 2px solid currentColor;
+  white-space: nowrap;
+  -webkit-animation: typed-0-caret 0.75s linear 1s infinite forwards;
+          animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@-webkit-keyframes typed-0 {
+  0%, 0.8999009009% {
+    content: "​D";
+    content: "​D"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  0.9009009009%, 1.8008018018% {
+    content: "​Do";
+    content: "​Do"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  1.8018018018%, 2.7017027027% {
+    content: "​Do ";
+    content: "​Do "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  2.7027027027%, 3.6026036036% {
+    content: "​Do y";
+    content: "​Do y"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  3.6036036036%, 4.5035045045% {
+    content: "​Do yo";
+    content: "​Do yo"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  4.5045045045%, 5.4044054054% {
+    content: "​Do you";
+    content: "​Do you"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  5.4054054054%, 6.3053063063% {
+    content: "​Do you ";
+    content: "​Do you "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  6.3063063063%, 7.2062072072% {
+    content: "​Do you n";
+    content: "​Do you n"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  7.2072072072%, 8.1071081081% {
+    content: "​Do you ne";
+    content: "​Do you ne"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  8.1081081081%, 9.008009009% {
+    content: "​Do you nee";
+    content: "​Do you nee"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  9.009009009%, 9.9089099099% {
+    content: "​Do you need";
+    content: "​Do you need"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  9.9099099099%, 10.8098108108% {
+    content: "​Do you need ";
+    content: "​Do you need "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  10.8108108108%, 11.7107117117% {
+    content: "​Do you need C";
+    content: "​Do you need C"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  11.7117117117%, 12.6116126126% {
+    content: "​Do you need Cr";
+    content: "​Do you need Cr"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  12.6126126126%, 13.5125135135% {
+    content: "​Do you need Cre";
+    content: "​Do you need Cre"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  13.5135135135%, 14.4134144144% {
+    content: "​Do you need Crea";
+    content: "​Do you need Crea"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  14.4144144144%, 15.3143153153% {
+    content: "​Do you need Creat";
+    content: "​Do you need Creat"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  15.3153153153%, 16.2152162162% {
+    content: "​Do you need Creati";
+    content: "​Do you need Creati"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  16.2162162162%, 17.1161171171% {
+    content: "​Do you need Creativ";
+    content: "​Do you need Creativ"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  17.1171171171%, 18.017018018% {
+    content: "​Do you need Creative";
+    content: "​Do you need Creative"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  18.018018018%, 18.9179189189% {
+    content: "​Do you need Creative ";
+    content: "​Do you need Creative "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  18.9189189189%, 19.8188198198% {
+    content: "​Do you need Creative F";
+    content: "​Do you need Creative F"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  19.8198198198%, 20.7197207207% {
+    content: "​Do you need Creative Fu";
+    content: "​Do you need Creative Fu"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  20.7207207207%, 21.6206216216% {
+    content: "​Do you need Creative Ful";
+    content: "​Do you need Creative Ful"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  21.6216216216%, 22.5215225225% {
+    content: "​Do you need Creative Full";
+    content: "​Do you need Creative Full"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  22.5225225225%, 23.4224234234% {
+    content: "​Do you need Creative Fulls";
+    content: "​Do you need Creative Fulls"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  23.4234234234%, 24.3233243243% {
+    content: "​Do you need Creative Fullst";
+    content: "​Do you need Creative Fullst"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  24.3243243243%, 25.2242252252% {
+    content: "​Do you need Creative Fullsta";
+    content: "​Do you need Creative Fullsta"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  25.2252252252%, 26.1251261261% {
+    content: "​Do you need Creative Fullstac";
+    content: "​Do you need Creative Fullstac"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  26.1261261261%, 27.026027027% {
+    content: "​Do you need Creative Fullstack";
+    content: "​Do you need Creative Fullstack"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  27.027027027%, 27.9269279279% {
+    content: "​Do you need Creative Fullstack ";
+    content: "​Do you need Creative Fullstack "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  27.9279279279%, 28.8278288288% {
+    content: "​Do you need Creative Fullstack w";
+    content: "​Do you need Creative Fullstack w"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  28.8288288288%, 29.7287297297% {
+    content: "​Do you need Creative Fullstack we";
+    content: "​Do you need Creative Fullstack we"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  29.7297297297%, 30.6296306306% {
+    content: "​Do you need Creative Fullstack web";
+    content: "​Do you need Creative Fullstack web"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  30.6306306306%, 31.5305315315% {
+    content: "​Do you need Creative Fullstack web ";
+    content: "​Do you need Creative Fullstack web "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  31.5315315315%, 32.4314324324% {
+    content: "​Do you need Creative Fullstack web d";
+    content: "​Do you need Creative Fullstack web d"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  32.4324324324%, 33.3323333333% {
+    content: "​Do you need Creative Fullstack web de";
+    content: "​Do you need Creative Fullstack web de"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  33.3333333333%, 34.2332342342% {
+    content: "​Do you need Creative Fullstack web dev";
+    content: "​Do you need Creative Fullstack web dev"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  34.2342342342%, 35.1341351351% {
+    content: "​Do you need Creative Fullstack web deve";
+    content: "​Do you need Creative Fullstack web deve"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  35.1351351351%, 36.035036036% {
+    content: "​Do you need Creative Fullstack web devel";
+    content: "​Do you need Creative Fullstack web devel"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  36.036036036%, 36.9359369369% {
+    content: "​Do you need Creative Fullstack web develo";
+    content: "​Do you need Creative Fullstack web develo"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  36.9369369369%, 37.8368378378% {
+    content: "​Do you need Creative Fullstack web develop";
+    content: "​Do you need Creative Fullstack web develop"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  37.8378378378%, 38.7377387387% {
+    content: "​Do you need Creative Fullstack web develope";
+    content: "​Do you need Creative Fullstack web develope"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  38.7387387387%, 39.6386396396% {
+    content: "​Do you need Creative Fullstack web developer";
+    content: "​Do you need Creative Fullstack web developer"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  39.6396396396%, 59.2782792793% {
+    content: "​Do you need Creative Fullstack web developer?";
+    content: "​Do you need Creative Fullstack web developer?"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  59.2792792793%, 59.999% {
+    content: "​Do you need Creative Fullstack web developer";
+    content: "​Do you need Creative Fullstack web developer"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  60%, 60.7197207207% {
+    content: "​Do you need Creative Fullstack web develope";
+    content: "​Do you need Creative Fullstack web develope"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  60.7207207207%, 61.4404414414% {
+    content: "​Do you need Creative Fullstack web develop";
+    content: "​Do you need Creative Fullstack web develop"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  61.4414414414%, 62.1611621622% {
+    content: "​Do you need Creative Fullstack web develo";
+    content: "​Do you need Creative Fullstack web develo"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  62.1621621622%, 62.8818828829% {
+    content: "​Do you need Creative Fullstack web devel";
+    content: "​Do you need Creative Fullstack web devel"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  62.8828828829%, 63.6026036036% {
+    content: "​Do you need Creative Fullstack web deve";
+    content: "​Do you need Creative Fullstack web deve"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  63.6036036036%, 64.3233243243% {
+    content: "​Do you need Creative Fullstack web dev";
+    content: "​Do you need Creative Fullstack web dev"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  64.3243243243%, 65.044045045% {
+    content: "​Do you need Creative Fullstack web de";
+    content: "​Do you need Creative Fullstack web de"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  65.045045045%, 65.7647657658% {
+    content: "​Do you need Creative Fullstack web d";
+    content: "​Do you need Creative Fullstack web d"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  65.7657657658%, 66.4854864865% {
+    content: "​Do you need Creative Fullstack web ";
+    content: "​Do you need Creative Fullstack web "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  66.4864864865%, 67.2062072072% {
+    content: "​Do you need Creative Fullstack web";
+    content: "​Do you need Creative Fullstack web"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  67.2072072072%, 67.9269279279% {
+    content: "​Do you need Creative Fullstack we";
+    content: "​Do you need Creative Fullstack we"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  67.9279279279%, 68.6476486486% {
+    content: "​Do you need Creative Fullstack w";
+    content: "​Do you need Creative Fullstack w"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  68.6486486486%, 69.3683693694% {
+    content: "​Do you need Creative Fullstack ";
+    content: "​Do you need Creative Fullstack "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  69.3693693694%, 70.0890900901% {
+    content: "​Do you need Creative Fullstack";
+    content: "​Do you need Creative Fullstack"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  70.0900900901%, 70.8098108108% {
+    content: "​Do you need Creative Fullstac";
+    content: "​Do you need Creative Fullstac"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  70.8108108108%, 71.5305315315% {
+    content: "​Do you need Creative Fullsta";
+    content: "​Do you need Creative Fullsta"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  71.5315315315%, 72.2512522523% {
+    content: "​Do you need Creative Fullst";
+    content: "​Do you need Creative Fullst"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  72.2522522523%, 72.971972973% {
+    content: "​Do you need Creative Fulls";
+    content: "​Do you need Creative Fulls"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  72.972972973%, 73.6926936937% {
+    content: "​Do you need Creative Full";
+    content: "​Do you need Creative Full"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  73.6936936937%, 74.4134144144% {
+    content: "​Do you need Creative Ful";
+    content: "​Do you need Creative Ful"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  74.4144144144%, 75.1341351351% {
+    content: "​Do you need Creative Fu";
+    content: "​Do you need Creative Fu"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  75.1351351351%, 75.8548558559% {
+    content: "​Do you need Creative F";
+    content: "​Do you need Creative F"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  75.8558558559%, 76.5755765766% {
+    content: "​Do you need Creative ";
+    content: "​Do you need Creative "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  76.5765765766%, 77.2962972973% {
+    content: "​Do you need Creative";
+    content: "​Do you need Creative"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  77.2972972973%, 78.017018018% {
+    content: "​Do you need Creativ";
+    content: "​Do you need Creativ"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  78.018018018%, 78.7377387387% {
+    content: "​Do you need Creati";
+    content: "​Do you need Creati"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  78.7387387387%, 79.4584594595% {
+    content: "​Do you need Creat";
+    content: "​Do you need Creat"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  79.4594594595%, 80.1791801802% {
+    content: "​Do you need Crea";
+    content: "​Do you need Crea"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  80.1801801802%, 80.8999009009% {
+    content: "​Do you need Cre";
+    content: "​Do you need Cre"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  80.9009009009%, 81.6206216216% {
+    content: "​Do you need Cr";
+    content: "​Do you need Cr"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  81.6216216216%, 82.3413423423% {
+    content: "​Do you need C";
+    content: "​Do you need C"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  82.3423423423%, 83.0620630631% {
+    content: "​Do you need ";
+    content: "​Do you need "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  83.0630630631%, 83.7827837838% {
+    content: "​Do you need";
+    content: "​Do you need"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  83.7837837838%, 84.5035045045% {
+    content: "​Do you nee";
+    content: "​Do you nee"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  84.5045045045%, 85.2242252252% {
+    content: "​Do you ne";
+    content: "​Do you ne"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  85.2252252252%, 85.9449459459% {
+    content: "​Do you n";
+    content: "​Do you n"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  85.9459459459%, 86.6656666667% {
+    content: "​Do you ";
+    content: "​Do you "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  86.6666666667%, 87.3863873874% {
+    content: "​Do you";
+    content: "​Do you"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  87.3873873874%, 88.1071081081% {
+    content: "​Do yo";
+    content: "​Do yo"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  88.1081081081%, 88.8278288288% {
+    content: "​Do y";
+    content: "​Do y"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  88.8288288288%, 89.5485495495% {
+    content: "​Do ";
+    content: "​Do "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  89.5495495495%, 90.2692702703% {
+    content: "​Do";
+    content: "​Do"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  90.2702702703%, 90.989990991% {
+    content: "​D";
+    content: "​D"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  90.990990991%, 100% {
+    content: "​";
+    content: "​"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+}
+@keyframes typed-0 {
+  0%, 0.8999009009% {
+    content: "​D";
+    content: "​D"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  0.9009009009%, 1.8008018018% {
+    content: "​Do";
+    content: "​Do"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  1.8018018018%, 2.7017027027% {
+    content: "​Do ";
+    content: "​Do "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  2.7027027027%, 3.6026036036% {
+    content: "​Do y";
+    content: "​Do y"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  3.6036036036%, 4.5035045045% {
+    content: "​Do yo";
+    content: "​Do yo"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  4.5045045045%, 5.4044054054% {
+    content: "​Do you";
+    content: "​Do you"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  5.4054054054%, 6.3053063063% {
+    content: "​Do you ";
+    content: "​Do you "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  6.3063063063%, 7.2062072072% {
+    content: "​Do you n";
+    content: "​Do you n"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  7.2072072072%, 8.1071081081% {
+    content: "​Do you ne";
+    content: "​Do you ne"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  8.1081081081%, 9.008009009% {
+    content: "​Do you nee";
+    content: "​Do you nee"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  9.009009009%, 9.9089099099% {
+    content: "​Do you need";
+    content: "​Do you need"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  9.9099099099%, 10.8098108108% {
+    content: "​Do you need ";
+    content: "​Do you need "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  10.8108108108%, 11.7107117117% {
+    content: "​Do you need C";
+    content: "​Do you need C"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  11.7117117117%, 12.6116126126% {
+    content: "​Do you need Cr";
+    content: "​Do you need Cr"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  12.6126126126%, 13.5125135135% {
+    content: "​Do you need Cre";
+    content: "​Do you need Cre"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  13.5135135135%, 14.4134144144% {
+    content: "​Do you need Crea";
+    content: "​Do you need Crea"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  14.4144144144%, 15.3143153153% {
+    content: "​Do you need Creat";
+    content: "​Do you need Creat"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  15.3153153153%, 16.2152162162% {
+    content: "​Do you need Creati";
+    content: "​Do you need Creati"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  16.2162162162%, 17.1161171171% {
+    content: "​Do you need Creativ";
+    content: "​Do you need Creativ"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  17.1171171171%, 18.017018018% {
+    content: "​Do you need Creative";
+    content: "​Do you need Creative"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  18.018018018%, 18.9179189189% {
+    content: "​Do you need Creative ";
+    content: "​Do you need Creative "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  18.9189189189%, 19.8188198198% {
+    content: "​Do you need Creative F";
+    content: "​Do you need Creative F"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  19.8198198198%, 20.7197207207% {
+    content: "​Do you need Creative Fu";
+    content: "​Do you need Creative Fu"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  20.7207207207%, 21.6206216216% {
+    content: "​Do you need Creative Ful";
+    content: "​Do you need Creative Ful"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  21.6216216216%, 22.5215225225% {
+    content: "​Do you need Creative Full";
+    content: "​Do you need Creative Full"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  22.5225225225%, 23.4224234234% {
+    content: "​Do you need Creative Fulls";
+    content: "​Do you need Creative Fulls"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  23.4234234234%, 24.3233243243% {
+    content: "​Do you need Creative Fullst";
+    content: "​Do you need Creative Fullst"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  24.3243243243%, 25.2242252252% {
+    content: "​Do you need Creative Fullsta";
+    content: "​Do you need Creative Fullsta"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  25.2252252252%, 26.1251261261% {
+    content: "​Do you need Creative Fullstac";
+    content: "​Do you need Creative Fullstac"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  26.1261261261%, 27.026027027% {
+    content: "​Do you need Creative Fullstack";
+    content: "​Do you need Creative Fullstack"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  27.027027027%, 27.9269279279% {
+    content: "​Do you need Creative Fullstack ";
+    content: "​Do you need Creative Fullstack "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  27.9279279279%, 28.8278288288% {
+    content: "​Do you need Creative Fullstack w";
+    content: "​Do you need Creative Fullstack w"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  28.8288288288%, 29.7287297297% {
+    content: "​Do you need Creative Fullstack we";
+    content: "​Do you need Creative Fullstack we"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  29.7297297297%, 30.6296306306% {
+    content: "​Do you need Creative Fullstack web";
+    content: "​Do you need Creative Fullstack web"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  30.6306306306%, 31.5305315315% {
+    content: "​Do you need Creative Fullstack web ";
+    content: "​Do you need Creative Fullstack web "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  31.5315315315%, 32.4314324324% {
+    content: "​Do you need Creative Fullstack web d";
+    content: "​Do you need Creative Fullstack web d"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  32.4324324324%, 33.3323333333% {
+    content: "​Do you need Creative Fullstack web de";
+    content: "​Do you need Creative Fullstack web de"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  33.3333333333%, 34.2332342342% {
+    content: "​Do you need Creative Fullstack web dev";
+    content: "​Do you need Creative Fullstack web dev"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  34.2342342342%, 35.1341351351% {
+    content: "​Do you need Creative Fullstack web deve";
+    content: "​Do you need Creative Fullstack web deve"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  35.1351351351%, 36.035036036% {
+    content: "​Do you need Creative Fullstack web devel";
+    content: "​Do you need Creative Fullstack web devel"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  36.036036036%, 36.9359369369% {
+    content: "​Do you need Creative Fullstack web develo";
+    content: "​Do you need Creative Fullstack web develo"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  36.9369369369%, 37.8368378378% {
+    content: "​Do you need Creative Fullstack web develop";
+    content: "​Do you need Creative Fullstack web develop"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  37.8378378378%, 38.7377387387% {
+    content: "​Do you need Creative Fullstack web develope";
+    content: "​Do you need Creative Fullstack web develope"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  38.7387387387%, 39.6386396396% {
+    content: "​Do you need Creative Fullstack web developer";
+    content: "​Do you need Creative Fullstack web developer"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  39.6396396396%, 59.2782792793% {
+    content: "​Do you need Creative Fullstack web developer?";
+    content: "​Do you need Creative Fullstack web developer?"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  59.2792792793%, 59.999% {
+    content: "​Do you need Creative Fullstack web developer";
+    content: "​Do you need Creative Fullstack web developer"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  60%, 60.7197207207% {
+    content: "​Do you need Creative Fullstack web develope";
+    content: "​Do you need Creative Fullstack web develope"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  60.7207207207%, 61.4404414414% {
+    content: "​Do you need Creative Fullstack web develop";
+    content: "​Do you need Creative Fullstack web develop"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  61.4414414414%, 62.1611621622% {
+    content: "​Do you need Creative Fullstack web develo";
+    content: "​Do you need Creative Fullstack web develo"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  62.1621621622%, 62.8818828829% {
+    content: "​Do you need Creative Fullstack web devel";
+    content: "​Do you need Creative Fullstack web devel"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  62.8828828829%, 63.6026036036% {
+    content: "​Do you need Creative Fullstack web deve";
+    content: "​Do you need Creative Fullstack web deve"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  63.6036036036%, 64.3233243243% {
+    content: "​Do you need Creative Fullstack web dev";
+    content: "​Do you need Creative Fullstack web dev"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  64.3243243243%, 65.044045045% {
+    content: "​Do you need Creative Fullstack web de";
+    content: "​Do you need Creative Fullstack web de"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  65.045045045%, 65.7647657658% {
+    content: "​Do you need Creative Fullstack web d";
+    content: "​Do you need Creative Fullstack web d"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  65.7657657658%, 66.4854864865% {
+    content: "​Do you need Creative Fullstack web ";
+    content: "​Do you need Creative Fullstack web "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  66.4864864865%, 67.2062072072% {
+    content: "​Do you need Creative Fullstack web";
+    content: "​Do you need Creative Fullstack web"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  67.2072072072%, 67.9269279279% {
+    content: "​Do you need Creative Fullstack we";
+    content: "​Do you need Creative Fullstack we"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  67.9279279279%, 68.6476486486% {
+    content: "​Do you need Creative Fullstack w";
+    content: "​Do you need Creative Fullstack w"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  68.6486486486%, 69.3683693694% {
+    content: "​Do you need Creative Fullstack ";
+    content: "​Do you need Creative Fullstack "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  69.3693693694%, 70.0890900901% {
+    content: "​Do you need Creative Fullstack";
+    content: "​Do you need Creative Fullstack"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  70.0900900901%, 70.8098108108% {
+    content: "​Do you need Creative Fullstac";
+    content: "​Do you need Creative Fullstac"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  70.8108108108%, 71.5305315315% {
+    content: "​Do you need Creative Fullsta";
+    content: "​Do you need Creative Fullsta"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  71.5315315315%, 72.2512522523% {
+    content: "​Do you need Creative Fullst";
+    content: "​Do you need Creative Fullst"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  72.2522522523%, 72.971972973% {
+    content: "​Do you need Creative Fulls";
+    content: "​Do you need Creative Fulls"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  72.972972973%, 73.6926936937% {
+    content: "​Do you need Creative Full";
+    content: "​Do you need Creative Full"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  73.6936936937%, 74.4134144144% {
+    content: "​Do you need Creative Ful";
+    content: "​Do you need Creative Ful"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  74.4144144144%, 75.1341351351% {
+    content: "​Do you need Creative Fu";
+    content: "​Do you need Creative Fu"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  75.1351351351%, 75.8548558559% {
+    content: "​Do you need Creative F";
+    content: "​Do you need Creative F"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  75.8558558559%, 76.5755765766% {
+    content: "​Do you need Creative ";
+    content: "​Do you need Creative "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  76.5765765766%, 77.2962972973% {
+    content: "​Do you need Creative";
+    content: "​Do you need Creative"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  77.2972972973%, 78.017018018% {
+    content: "​Do you need Creativ";
+    content: "​Do you need Creativ"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  78.018018018%, 78.7377387387% {
+    content: "​Do you need Creati";
+    content: "​Do you need Creati"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  78.7387387387%, 79.4584594595% {
+    content: "​Do you need Creat";
+    content: "​Do you need Creat"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  79.4594594595%, 80.1791801802% {
+    content: "​Do you need Crea";
+    content: "​Do you need Crea"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  80.1801801802%, 80.8999009009% {
+    content: "​Do you need Cre";
+    content: "​Do you need Cre"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  80.9009009009%, 81.6206216216% {
+    content: "​Do you need Cr";
+    content: "​Do you need Cr"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  81.6216216216%, 82.3413423423% {
+    content: "​Do you need C";
+    content: "​Do you need C"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  82.3423423423%, 83.0620630631% {
+    content: "​Do you need ";
+    content: "​Do you need "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  83.0630630631%, 83.7827837838% {
+    content: "​Do you need";
+    content: "​Do you need"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  83.7837837838%, 84.5035045045% {
+    content: "​Do you nee";
+    content: "​Do you nee"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  84.5045045045%, 85.2242252252% {
+    content: "​Do you ne";
+    content: "​Do you ne"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  85.2252252252%, 85.9449459459% {
+    content: "​Do you n";
+    content: "​Do you n"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  85.9459459459%, 86.6656666667% {
+    content: "​Do you ";
+    content: "​Do you "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  86.6666666667%, 87.3863873874% {
+    content: "​Do you";
+    content: "​Do you"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  87.3873873874%, 88.1071081081% {
+    content: "​Do yo";
+    content: "​Do yo"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  88.1081081081%, 88.8278288288% {
+    content: "​Do y";
+    content: "​Do y"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  88.8288288288%, 89.5485495495% {
+    content: "​Do ";
+    content: "​Do "/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  89.5495495495%, 90.2692702703% {
+    content: "​Do";
+    content: "​Do"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  90.2702702703%, 90.989990991% {
+    content: "​D";
+    content: "​D"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+  90.990990991%, 100% {
+    content: "​";
+    content: "​"/"Do you need Creative Fullstack web developer?";
+    alt: "Do you need Creative Fullstack web developer?";
+  }
+}
+@-webkit-keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+.input-wrapper > input:focus + .placeholder, .input-wrapper > input:active + .placeholder {
+  display: none;
+}

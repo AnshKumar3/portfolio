@@ -1,7 +1,11 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
+import styles from './Navbar.module.css';
+import { Navbar } from "react-bootstrap";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
